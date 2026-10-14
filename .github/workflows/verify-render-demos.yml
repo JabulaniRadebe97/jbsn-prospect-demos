@@ -20,7 +20,7 @@ jobs:
             "https://jbsn-prospect-demos.onrender.com/demos/max-munchies-concept.html"
             "https://jbsn-prospect-demos.onrender.com/demos/welkom-business-machines-concept.html"
           )
-          for url in "\${urls[@]}"; do
+          for url in "${urls[@]}"; do
             echo "Checking $url"
             success=0
             for attempt in $(seq 1 12); do
@@ -30,7 +30,7 @@ jobs:
                 success=1
                 break
               fi
-              echo "Attempt $attempt returned HTTP \${code:-000}; retrying shortly..."
+              echo "Attempt $attempt returned HTTP ${code:-000}; retrying shortly..."
               sleep 5
             done
             if [[ "$success" -ne 1 ]]; then
