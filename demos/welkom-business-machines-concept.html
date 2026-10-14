@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Welkom Business Machines — Quote Flow Concept</title><meta name="robots" content="noindex,nofollow">
+<style>
+:root{--accent:#2563eb;--ink:#172033;--muted:#5d687b;--paper:#f5f7fb;--line:#e1e6ef}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--paper);color:var(--ink)}
+.top{background:#101828;color:#fff;padding:12px 5vw;font-size:12px;letter-spacing:.08em;font-weight:800}
+.wrap{max-width:1050px;margin:auto;padding:28px 20px 60px}
+nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 0 30px}
+.brand{font-weight:900;letter-spacing:-.04em;font-size:19px}.pill{font-size:11px;border:1px solid var(--line);border-radius:99px;padding:8px 12px;background:white;color:var(--muted)}
+.hero{background:white;border:1px solid var(--line);border-radius:26px;padding:clamp(26px,5vw,58px);box-shadow:0 15px 45px #15213b0a}
+.kicker{color:var(--accent);font-weight:850;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,62px);line-height:1.02;letter-spacing:-.055em;max-width:750px;margin:16px 0}
+p{line-height:1.65;color:var(--muted);max-width:720px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+a.btn,button{display:inline-block;text-decoration:none;border:0;border-radius:12px;padding:13px 18px;font-weight:800;cursor:pointer;font-size:14px}
+.primary{background:var(--accent);color:white}.secondary{background:#f0f3f8;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:20px 0 34px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.card h3{margin:0 0 8px;font-size:17px}.card p{margin:0;font-size:14px}
+.section-title{font-size:24px;letter-spacing:-.03em;margin:34px 0 8px}
+.form{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:15px}
+label{font-weight:750;font-size:13px;display:grid;gap:7px}input,select,textarea{width:100%;border:1px solid #ccd4e1;border-radius:10px;padding:12px;font:inherit;background:white;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}.small{font-size:12px;color:var(--muted)}.notice{border-left:4px solid var(--accent);background:#fff;padding:15px 17px;border-radius:8px;margin-top:24px;font-size:12px;line-height:1.6;color:#4b5565}
+footer{padding-top:24px;color:#7b8494;font-size:12px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.pill{max-width:190px;text-align:center}nav{align-items:flex-start}}
+</style></head>
+<body><div class="top">UNOFFICIAL CONCEPT PREVIEW · JBSN CREATIVE</div><main class="wrap">
+<nav><div class="brand">WELKOM BUSINESS MACHINES</div><div class="pill">Concept preview · Not an official site</div></nav>
+<section class="hero"><div class="kicker">A practical digital improvement concept</div><h1>Turn product questions into quote-ready requests.</h1><p>A concept for collecting the product, quantity and delivery/collection details the business says help it respond to quote requests.</p>
+<div class="actions"><a class="btn primary" href="#enquiry">Try the enquiry flow</a><a class="btn secondary" href="https://jbsncreative.netlify.app/" target="_blank" rel="noopener">JBSN Creative</a></div></section>
+<h2 class="section-title">How the experience could work</h2><p>These are proposed pathways, based on publicly visible business information. Confirm content, details and approval before any production build.</p>
+<section class="grid"><article class="card"><h3>Stationery & office supplies</h3><p>Capture product names, codes and quantities.</p></article>
+<article class="card"><h3>Ink, toners & printers</h3><p>Let customers specify a model or share a product link.</p></article>
+<article class="card"><h3>Sound & technical equipment</h3><p>Collect the product category and intended use.</p></article>
+<article class="card"><h3>Repairs & other enquiries</h3><p>Capture the issue and best contact details.</p></article></section>
+<h2 class="section-title" id="enquiry">Test the enquiry form</h2><p>Fill in sample details to see how a structured enquiry could be handed to WhatsApp. This opens WhatsApp; it does not send automatically.</p>
+<section class="form"><label>Product or product link<textarea id="Product_or_product_link" placeholder="What do you need?"></textarea></label>
+<label>Quantity<textarea id="Quantity" placeholder="How many?"></textarea></label>
+<label>Delivery / collection<select id="Delivery___collection"><option>Collection</option><option>Local delivery enquiry</option><option>Courier quote enquiry</option><option>Not sure — please advise</option></select></label><button class="primary" onclick="sendEnquiry()">Prepare WhatsApp enquiry ↗</button><div class="small">This is a concept interaction. Review the message and recipient before sending.</div></section>
+<div class="notice"><strong>Important concept disclaimer:</strong> Concept only. This complements the business’s existing website and quote process; it does not replace the official store or claim stock/pricing accuracy. No message has been sent to the business. This preview is for discussion and approval only.</div>
+<footer>Concept prepared by JBSN Creative · Welkom Business Machines — Quote Flow Concept · Do not publish as the official business site without written approval.</footer>
+</main><script>
+function sendEnquiry(){
+ const ids = Array.from(document.querySelectorAll('input,select,textarea'));
+ const lines = ids.filter(x=>x.value.trim()).map(x=>x.labels?.[0]?.innerText.split('\n')[0]+': '+x.value.trim());
+ const message = 'Hello, I am enquiring via a JBSN Creative concept preview for WELKOM BUSINESS MACHINES.\n' + lines.join('\n') + '\nPlease confirm availability and any applicable details.';
+ window.open('https://wa.me/27681723227?text='+encodeURIComponent(message),'_blank','noopener');
+}
+</script></body></html>
