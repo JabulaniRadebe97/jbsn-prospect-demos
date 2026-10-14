@@ -1,0 +1,40 @@
+name: Verify Render demo URLs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  check-public-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check demo hub and each concept
+        shell: bash
+        run: |
+          set -euo pipefail
+          urls=(
+            "https://jbsn-prospect-demos.onrender.com/"
+            "https://jbsn-prospect-demos.onrender.com/demos/gas-boys-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/max-munchies-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/welkom-business-machines-concept.html"
+          )
+          for url in "\${urls[@]}"; do
+            echo "Checking $url"
+            success=0
+            for attempt in $(seq 1 12); do
+              code="$(curl --location --silent --show-error --max-time 15 --output /dev/null --write-out '%{http_code}' "$url" 2>/dev/null || true)"
+              if [[ "$code" =~ ^2[0-9][0-9]$ ]]; then
+                echo "PASS HTTP $code — $url"
+                success=1
+                break
+              fi
+              echo "Attempt $attempt returned HTTP \${code:-000}; retrying shortly..."
+              sleep 5
+            done
+            if [[ "$success" -ne 1 ]]; then
+              echo "::error::URL did not return HTTP 2xx: $url"
+              exit 1
+            fi
+          done
