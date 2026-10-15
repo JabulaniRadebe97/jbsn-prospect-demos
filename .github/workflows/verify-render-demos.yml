@@ -19,6 +19,8 @@ jobs:
             "https://jbsn-prospect-demos.onrender.com/demos/gas-boys-concept.html"
             "https://jbsn-prospect-demos.onrender.com/demos/max-munchies-concept.html"
             "https://jbsn-prospect-demos.onrender.com/demos/welkom-business-machines-concept.html"
+          "https://jbsn-prospect-demos.onrender.com/demos/shava-electrical-concept.html"
+          "https://jbsn-prospect-demos.onrender.com/demos/goldfields-marketing-concept.html"
           )
           for url in "${urls[@]}"; do
             echo "Checking $url"
