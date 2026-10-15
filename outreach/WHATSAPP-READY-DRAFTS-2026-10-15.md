@@ -16,7 +16,7 @@ Hello Galison team,
 
 I’m Jabulani from JBSN Creative.
 
-We’ve developed an independent digital experience concept exploring how technical buyers could navigate your product areas and reach the relevant official information or start a more structured technical enquiry.
+We’ve developed an independent digital experience and brand-direction concept exploring how technical buyers could navigate your product areas and reach the relevant official information or start a more structured technical enquiry. The preview includes a proposed vector-style identity treatment for discussion; it is not an approved replacement for your official logo.
 
 You can preview the concept here:
 https://jbsn-prospect-demos.onrender.com/demos/galison-industrial-concept.html
@@ -56,7 +56,7 @@ Hello Bafotech team,
 
 I’m Jabulani from JBSN Creative.
 
-We’ve prepared an independent digital concept exploring how technical buyers could find the right equipment information and submit a more useful first enquiry, with room to explain the application and product or component of interest.
+We’ve prepared an independent digital experience and brand-direction concept exploring how technical buyers could find the right equipment information and submit a more useful first enquiry, with room to explain the application and product or component of interest. Its vector-style mark and visual system are proposed concepts, not a replacement for your approved logo.
 
 Preview the concept:
 https://jbsn-prospect-demos.onrender.com/demos/bafotech-product-enquiry-concept.html
@@ -116,7 +116,7 @@ Hello You-Nique Beauty team 🌸
 
 I’m Jabulani from JBSN Creative.
 
-We’ve created a private digital presence concept inspired by your public business presence. The idea is to give customers a more elegant way to explore beauty services and enquire about appointments from their phones.
+We’ve created a private digital presence and brand-direction concept inspired by your public business presence. The idea is to give customers a more elegant way to explore beauty services and enquire about appointments from their phones. It also explores a proposed vector-style brand mark and motion language, which would need your approval before being treated as official branding.
 
 Preview the concept:
 https://jbsn-prospect-demos.onrender.com/demos/you-nique-beauty-concept.html
