@@ -123,3 +123,48 @@ Do not send the demo to a prospect if any of the following is true:
 **Premium art direction. Original concept. Clear storytelling. Useful interaction. Fast and accessible execution. Honest claims. Working conversion paths. Verified before outreach.**
 
 The target is to build work worthy of comparison with exceptional global digital experiences while remaining original, appropriate to each client, and commercially effective. Awards and conversion rates are aspirations, not guaranteed outcomes.
+
+## 10. Brand identity, logo fidelity and motion direction — mandatory
+This section is mandatory for every client website, landing page, brand-led experience and personalised prospect demo. It applies to existing businesses with established brand systems and to businesses with incomplete or absent identity assets.
+
+### A. Start with the real brand
+- Research the business's official logo, brand guide, colours, typography, imagery, tone of voice, packaging, storefront, social profiles and existing customer experience before selecting a visual direction.
+- Prefer official, high-resolution logo files from the business's own channels. Preserve proportions, clear space, colour variants and minimum readable size. Never stretch, raster-blur, crop, recolour or decorate an official logo without permission.
+- Build the page's colour palette from verified brand assets first. Record primary, secondary, accent, neutral and functional colours; check text and interactive-state contrast.
+- Match the brand's actual mood and category: premium does not always mean minimal, playful does not mean childish, industrial does not mean generic dark grey, and beauty does not automatically mean blush pink.
+- Typography, image treatment, iconography, layout rhythm, microcopy, motion and CTA tone must all reinforce the same brand character.
+
+### B. Logo repair and missing-logo protocol
+- If a supplied logo is pixelated, too small or only available as a low-resolution raster, first search for an official SVG/vector/PDF or a higher-resolution transparent asset.
+- If no better official asset is available, do not silently pass off a new logo as the original. Create a clean, vector-first *proposed logo refinement* based on verified references, or a clearly disclosed *proposed concept mark* if there is no usable official mark.
+- Show the concept mark at actual header size and in a larger identity study. Keep a readable wordmark, correct contrast, consistent clear space, and a one-colour fallback. Label unapproved work as a proposal and request owner approval before production.
+- Do not invent a trademark, slogan, certification seal or claim of official approval. Avoid using a business's logo in a way that implies endorsement of the concept.
+- Deliver vector source (SVG) and suitable exports (transparent PNG and favicon/app icon where relevant) when the engagement scope includes identity work. Do not claim that a vector redraw is the official original unless verified and approved.
+
+### C. Full identity system, not just a logo
+Every project must define and apply:
+1. Logo/wordmark and symbol usage, clear space, sizing and responsive lockup.
+2. Colour palette with named roles and tested contrast.
+3. Typography hierarchy for headlines, body, navigation, labels and data.
+4. Image/illustration art direction, subject choice, crop, lighting, grade and licensing.
+5. Layout/grid, spacing, corner treatment, borders, textures and graphic motifs.
+6. Brand voice, terminology, headings, CTA language and error/help states.
+7. Motion language: signature reveal, transitions, hover feedback, scroll behaviour and any animated brand motif.
+8. Responsive identity rules so the brand remains legible and recognisable on small screens.
+
+### D. Motion graphics: intentional, expressive and professional
+- Motion is a first-class creative element, not an optional afterthought. Use it creatively when it reinforces the brand and improves understanding: logo animation, animated linework, layered image reveals, kinetic typography, parallax, scroll storytelling, product micro-interactions or a meaningful interactive graphic.
+- The motion style must belong to the brand. Use a playful spring or expressive shape language for a playful brand; measured mechanical movement for engineering; confident, crisp transitions for office/professional brands; organic, fluid reveals for beauty/wellness—only when consistent with actual identity evidence.
+- Create a signature motion concept for each project rather than applying the same animation pack everywhere. Vary pacing, amplitude, easing, layering and visual motif according to brand personality.
+- Motion must be polished and purposeful: no gratuitous loops, jitter, fake loading, misleading success states or animation that blocks content. Respect performance and battery on mobile.
+- Honour `prefers-reduced-motion` and provide a meaningful static fallback. This is an accessibility accommodation, not a direction to make the normal experience visually inert. The default experience should still have confident, professional motion where it earns its place.
+- Avoid sound unless the user explicitly activates it. For long-running or user-controlling animation, provide a pause/disable mechanism.
+
+### E. Brand QA release gate
+Before outreach, verify:
+- The logo is crisp at desktop and mobile sizes, readable on its background and not distorted.
+- The palette and typography match the verified identity or are explicitly labelled as a proposed direction.
+- Every page section, image, icon, graphic and motion behaviour feels part of one coherent identity.
+- Motion works on touch and pointer devices and remains usable with reduced-motion enabled.
+- Proposed logo refinements and concept marks are explicitly disclosed as unapproved; no message implies the business approved the design.
+- The live demo has been visually reviewed, not merely returned HTTP 200.
