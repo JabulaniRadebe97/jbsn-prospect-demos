@@ -8,7 +8,7 @@ on:
 jobs:
   check-public-pages:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
       - name: Check demo hub and each concept
         shell: bash
@@ -19,8 +19,12 @@ jobs:
             "https://jbsn-prospect-demos.onrender.com/demos/gas-boys-concept.html"
             "https://jbsn-prospect-demos.onrender.com/demos/max-munchies-concept.html"
             "https://jbsn-prospect-demos.onrender.com/demos/welkom-business-machines-concept.html"
-          "https://jbsn-prospect-demos.onrender.com/demos/shava-electrical-concept.html"
-          "https://jbsn-prospect-demos.onrender.com/demos/goldfields-marketing-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/galison-industrial-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/micon-project-enquiry-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/bafotech-product-enquiry-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/shava-electrical-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/goldfields-marketing-concept.html"
+            "https://jbsn-prospect-demos.onrender.com/demos/you-nique-beauty-concept.html"
           )
           for url in "${urls[@]}"; do
             echo "Checking $url"
